@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body class="home-page">
+    <h1>Trang chủ</h1>
+
+    <% if (success) { %>
+      <p style="color: green;"><%= success %></p>
+    <% } %>
+
+    <p>Xin chào, <%= name %></p>
+
+    <form action="/logout" method="POST">
+      <button type="submit">Đăng xuất</button>
+    </form>
+  </body>
+</html>
